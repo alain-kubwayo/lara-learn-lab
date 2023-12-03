@@ -1,0 +1,10 @@
+p {
+    font-size: 18px;
+}
+
+.main-title {
+    font-size: 40px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #ff4545;
+    color: #ff4545;
+}

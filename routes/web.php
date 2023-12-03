@@ -17,6 +17,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/books', function() {
-    return view('books.index');
+Route::get('/equipments', function() {
+    // $equipments = ['name' => 'dumbbells', 'price' => 75];
+    // return view('equipments.index', $equipments);
+    $equipments = [
+        ['name' => 'dumbbells', 'price' => 124],
+        ['name' => 'treadmill', 'price' => 400]
+    ];
+    return view('equipments.index', [ 'equipments' => $equipments ]);
 });
