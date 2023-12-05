@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\EquipmentController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,12 +18,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/equipments', function() {
-    // $equipments = ['name' => 'dumbbells', 'price' => 75];
-    // return view('equipments.index', $equipments);
-    $equipments = [
-        ['name' => 'dumbbells', 'price' => 124],
-        ['name' => 'treadmill', 'price' => 400]
-    ];
-    return view('equipments.index', [ 'equipments' => $equipments ]);
-});
+Route::get('/equipments', [EquipmentController::class, 'index']);
+
+Route::get('/equipments/{id}', [EquipmentController::class, 'show']);
