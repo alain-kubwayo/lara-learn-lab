@@ -8,6 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Equipment extends Model
 {
     protected $table = 'equipments';
+    protected $casts = [
+        'additionals' => 'array'
+    ]; // array to json on saving and json to array on retrival
 
     use HasFactory;
 }
