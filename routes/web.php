@@ -24,12 +24,12 @@ Route::post('/equipments', [EquipmentController::class, 'store'])->name('equipme
 Route::get('/equipments/{id}', [EquipmentController::class, 'show'])->name('equipments.show')->middleware('auth');
 Route::delete('/equipments/{id}', [EquipmentController::class, 'destroy'])->name('equipments.destroy')->middleware('auth');
 
-// Auth::routes();
+Auth::routes();
 
 // disable registration
-Auth::routes([
-    'register' => false
-]);
+// Auth::routes([
+//     'register' => false
+// ]);
 
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

@@ -15,7 +15,8 @@
 
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
-    <link href="/css/main.css" rel="stylesheet">
+    {{-- @vite('resources/css/app.css') --}}
+    {{-- <link href="/css/main.css" rel="stylesheet"> --}}
 </head>
 <body>
     <div id="app">
@@ -55,7 +56,6 @@
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }}
                                 </a>
-
                                 <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
