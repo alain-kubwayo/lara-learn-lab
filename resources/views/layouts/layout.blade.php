@@ -5,14 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>LaraGym</title>
-    {{-- <link href="/css/main.css" rel="stylesheet"> --}}
+    {{-- @vite(['resources/sass/app.scss', 'resources/js/app.js']) --}}
     @vite('resources/css/app.css')
 </head>
 <body>
     @yield('content')
-
-    <footer>
-        &copy; 2023 LaraGym.
-    </footer>
 </body>
 </html>
