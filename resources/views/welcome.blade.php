@@ -2,8 +2,6 @@
 @section('content')
     <header>
         <nav class="container mx-auto">
-        <h1 class="my-4 text-2xl font-bold text-gray-500">LaraGym</h1>
-        </nav>
         <div class="container flex items-center mx-auto bg-gray-400 rounded-md h-96">
             <div class="text-center sm:ml-20 text-gray-50 sm:text-left">
                 <h1 class="mb-4 text-5xl font-bold">
@@ -92,13 +90,4 @@
               </div>
         </section>
     </main>
-    <footer class="px-6 mb-6 md:px-0">
-        <div class="container mx-auto space-x-6">
-            <div class="space-y-2 text-gray-500">
-                <h1 class="text-2xl font-bold">LaraGym</h1>
-                <p>The largest online community to buy gym equipments in Kigali.</p>
-                <p>© {{ date('Y') }}.</p>
-            </div>
-        </div>
-    </footer>
 @endsection
